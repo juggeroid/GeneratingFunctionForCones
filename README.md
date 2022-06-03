@@ -4,7 +4,11 @@ This program produces the generating function for cones in polyhedra. Four cases
 To build it, one must invoke 
 ```clang++ -O3 -std=c++20 -march=native main.cpp```
 and have the prerequisites installed. This hasn't been tested on MSVC, but should work provided you configure the prerequisites by yourself.
+Just pass the matrix as an argument or parse it using the internal parser defined in ```Utility.hpp```. 
+It does not yet support the command-line arguments. 
+
 **Prerequisites**
+
 1. tl::expected (https://github.com/TartanLlama/expected)
 2. Eigen (https://eigen.tuxfamily.org/index.php?title=Main_Page)
 3. tsl::robin_map (https://github.com/Tessil/robin-map)
